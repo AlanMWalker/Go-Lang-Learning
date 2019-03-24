@@ -1,7 +1,6 @@
-package main 
+package main
 
-import "fmt"
-
-func main()  {
-	fmt.Println("Hello")
+func main() {
+	var xs []float64
+	Average(xs)
 }
