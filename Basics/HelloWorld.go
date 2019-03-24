@@ -43,6 +43,11 @@ float32 float64
 complex64 complex128
 */
 
+const Test = "String test"
+const (
+	numeric = 2 << 30
+)
+
 func main() {
 	doesNothingVoid()
 	fmt.Println("Normal function ", add(1, 0))
