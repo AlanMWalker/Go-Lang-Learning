@@ -78,5 +78,17 @@ func main() {
 	p = &ply // if not ptr won't work because Poly print method requires pointer for its print interface definition
 	p.print()
 
-	// TODO : Type assertions page 15 out of 26 on Go lang interfaces
+	// Empty interface
+
+	var i interface{} // can hold values of any type
+	i = 42
+	describe(i)
+
+	i = "hello"
+	describe(i)
+}
+
+func describe(i interface{}) {
+	// print value & type
+	fmt.Printf("Empty interface %v, %T\n", i, i)
 }
